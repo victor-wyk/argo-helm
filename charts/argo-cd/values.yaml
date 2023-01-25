@@ -35,7 +35,7 @@ crds:
   # -- Install and upgrade CRDs
   install: true
   # -- Keep CRDs on chart uninstall
-  keep: true
+  keep: false
   # -- Annotations to be added to all CRDs
   annotations: {}
 
@@ -1183,7 +1183,7 @@ redis-ha:
   enabled: false
   exporter:
     # -- If `true`, the prometheus exporter sidecar is enabled
-    enabled: true
+    enabled: false
   persistentVolume:
     # -- Configures persistency on Redis nodes
     enabled: false
