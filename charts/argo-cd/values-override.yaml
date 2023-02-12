@@ -6,7 +6,7 @@ server:
         url: https://github.com/arch-69/hitc.git
       - name: argo-helm
         type: helm
-        url: https://github.com/victor-wyk/argo-helm/tree/6d46e216a4b5777cdbf82fff04caf93bb63bd7a6
+        url: https://argoproj.github.io/argo-helm
   additionalApplications:
     - name: argocd
       namespace: argocd
@@ -20,7 +20,7 @@ server:
           valueFiles:
             - values.yaml
             - values-override.yaml
-#        path: infra/argo-helm/charts/argo-cd
+        path: infra/argo-helm/charts/argo-cd
         directory:
           recurse: true
         repoURL: https://github.com/arch-69/hitc.git
